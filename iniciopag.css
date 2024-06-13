@@ -1,0 +1,457 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&display=swap');
+*{ margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    }
+
+body{font-size: 110%;
+}
+/*começo da pagina*/
+.cabecalho{
+    display: flex;
+    flex-direction: row ;
+    align-items: center;
+    justify-content: space-around;
+    padding: 19px;
+    background-image:url(./Imagens2/Fruta_Principal.jpg);
+    background-size:cover; 
+    background-position: center -900px ;
+    background-repeat: no-repeat;
+    border-radius: 1000pc 900px;
+}
+/*imagem da logo da maça*/
+.imagem-logo{
+    height: 100px;
+    width: 100px;
+    padding: 4px;
+    border: 3px solid rgb(0, 0, 0);
+    box-shadow: 40pc;
+    backdrop-filter: blur(10px);
+    border-radius: 10px;
+}
+/*Termino */
+
+/*navegação de guias*/
+.cabeçalho-menu{
+  display:flex;
+  gap: 2cm;
+  box-sizing:border-box;
+  padding: 10px 100px;
+}
+
+/*palavras que são as guias no cabecalho*/
+.cabeçalho-menu-item{
+  align-items: center;
+  font-family: "Comfortaa", sans-serif;
+  color: rgb(255, 255, 255);
+  font-size: 28px;
+  font-weight: 400px;
+  border: 2px solid rgb(7, 8, 50);
+  border-radius: 10px;
+  backdrop-filter: blur(10px);
+  padding: 7px 7px 7px 7px;
+}
+
+/*Animação do botão logo*/
+
+.imagem-logo {
+    transition: transform 1.0s ease;
+}
+/*Termino*/
+
+/*Animação do cabeçalho botao item*/
+.cabeçalho-menu-item {
+    transition: transform 1.0s ease;
+}
+/*Termino*/
+
+/* Fim menu pagina*/
+
+/*começo conteudo principal*/
+.conteudo{
+    padding: 15px;
+    text-align: center;
+    border-top: 0.6px solid;
+    margin-bottom: 1px;
+    padding: 0px;
+    text-align: left;
+    color: rgb(0, 0, 0);
+    margin-top: 0px;
+    
+}
+/*conteudo que aparece abaixo do cabecalho*/
+.conteudo-principal{
+    background-image: url('./Imagens/background-image.jpeg');
+    position: flex;
+    background-size:cover; 
+    background-position:right; 
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: row;
+    gap: 25px;
+    align-items: center;
+    justify-content: space-around;
+    border-radius: 10px 10pc;
+}
+.conteudo-principal-escrito{
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(0, 0, 0, 0.388); /* Laranja com 30% de transparência */
+    padding: 20px;
+    text-align: left;
+}
+
+.conteudo-principal-escrito-titulo{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-family: "Comfortaa", sans-serif;
+    font-weight: 400;
+    font-size: 66px;
+    color: rgb(255, 255, 255);
+}
+.conteudo-principal-escrito-subtitulo{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-family: "Comfortaa", sans-serif;
+    font-weight: 300;
+    font-size: 42;
+    color: rgba(255, 251, 251, 0.92);
+}
+.conteudo-principal-fim-titulo{
+    display: flex;
+    align-items: center;
+}
+
+
+/*esstilização do botao do conteudo principal*/
+.conteudo-principal-button-div{
+    display: flex;
+    flex-direction: row ;
+    align-items: center;
+    justify-content: space-around;
+    padding: 19px;
+}
+.conteudo-principal-escrito-botao {
+    font-family: "Comfortaa", sans-serif;
+    font-size: 24px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #0000004e;
+    padding: 14px 40px;
+    color: #ffffff;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    cursor: pointer;
+    border-radius: 10px;
+    border: 3px, #000000;
+    box-shadow: rgba(149, 120, 59, 0.25) 10px 2px 5px , rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    transition: .4s;
+   }
+   
+   .conteudo-principal-escrito-botao span:last-child {
+    display: none;
+    justify-content: center;
+    align-items: center;
+   }
+   
+   .conteudo-principal-escrito-botao:hover {
+    transition: .4s;
+    border: 2px , #ae9f50;
+    background-color: #b4a8346b;
+    color: #ffffff;
+   }
+   
+   .conteudo-principal-escrito-botao:active {
+    background-color: #87dbd0;
+   }
+   
+   
+/*termino*/
+
+/*estilização da imagem do conteudo principal*/
+.conteudo-principal-imagem-01{
+    display: flex;
+    justify-content: end;
+    height: 120px;
+    width: 120px;
+}
+.conteudo-principal-imagem-02{
+    display: flex;
+    justify-content: end;
+    height: 120px;
+    width: 120px;
+
+}
+.conteudo-principal-imagem-03{
+    display: flex;
+    justify-content: end;
+    height: 120px;
+    width: 120px;
+}
+
+.conteudo-principal-imagem{
+    display: flex;
+    justify-content: end;
+    height: 120px;
+    width: 120px;
+}
+/*termino*/
+
+/*Animação das fotos svg 2 parte conteudo principal escrito*/
+
+  .conteudo-principal-imagem {
+    transition: transform 1.0s ease;
+  }
+  
+  .conteudo-principal-imagem-01 {
+    transition: transform 1.0s ease;
+  }
+  .conteudo-principal-imagem-02 {
+    transition: transform 1.0s ease;
+  }
+  .conteudo-principal-imagem-03 {
+        transition: transform 1.0s ease;
+  }
+  .ampliada {
+    transform: scale(1.2); /* Ajustar tamanho */
+  }
+  
+  /*Termino*/
+
+.conteudo-principal-escrito-rodape{
+    display:flex ;
+    justify-content: center;
+    flex-direction: row;
+    font-family: "Comfortaa", sans-serif;
+    font-weight: 400;
+    font-size: 30px;
+    color: rgb(0, 0, 0);
+    background-color: rgb(69, 193, 112);
+}
+
+/*conteudo secundario estilização*/
+
+.conteudo-secundario{
+    background-image: url(./Imagens/localizacao.jpg);
+    background-size:cover; 
+    background-position:center; 
+    background-repeat: no-repeat;
+    height: 750px;
+    width: 100%;    
+}
+.conteudo-secundario-escrito{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    text-align: left;
+    text-align: center;
+    font-family: "Comfortaa", sans-serif;
+    background-color: rgba(34, 24, 8, 0.252); /* Laranja com 30% de transparência */
+}
+.conteudo-secundario-escrito-2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.conteudo-secundario-escrito-titulo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Comfortaa", sans-serif;
+    font-weight: 400;
+    font-size: 51px;
+    color: aliceblue;
+}
+
+.conteudo-secundario-escrito-subtitulo{
+    display: flex;
+    justify-content: center;
+    align-items: top;
+    font-family: "Comfortaa", sans-serif;
+    font-weight: 100;
+    font-size: 20px;
+    color: rgb(0, 0, 0);
+}
+
+
+.conteudo-secundario-escrito-button-div-02{
+    display: flex ;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+}
+
+/* Esterilização do botão da segunda pagina */ 
+.conteudo-secundario-escrito-button {
+    font-family: "Comfortaa", sans-serif;
+    font-size: 24px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #0000003e;
+    padding: 14px 40px;
+    color: #000000;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    cursor: pointer;
+    border-radius: 10px;
+    border: 8px, #000000;
+    box-shadow: rgba(190, 185, 153, 0.881) 10px 2px 5px , rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    transition: .4s;
+   }
+   
+   .conteudo-secundario-escrito-button span:last-child {
+    display: none;
+   }
+   
+   .conteudo-secundario-escrito-button:hover {
+    transition: .4s;
+    border: 3px , #000000;
+    background-color:  #ae9e5093;
+    color: #000000;
+   }
+   
+   .conteudo-secundario-escrito-button:active {
+    background-color:  #ffffff;
+   }
+
+/* Estilo para centralizar o footer */
+footer {
+  display: flex;
+  justify-content: center;
+  margin-top: 0px; /* Ajuste conforme necessário */
+  background-image: url(./Imagens2/Fruta_Principal.jpg);
+  backdrop-filter: blur(6px);
+  background-position: center -1200px;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.container {
+  font-family: "Comfortaa", sans-serif;
+  font-size: 20px;
+  font-weight: 400px;
+  background-color: #1c1c1698;
+  width: 100%; /* Centraliza o conteúdo */
+  max-width: 1200px; /* Define a largura máxima do container */
+}
+
+/* Estilo para centralizar o footer */
+footer {
+  display: flex;
+  justify-content: center;
+  margin-top: 0px; /* Ajuste conforme necessário */
+}
+
+.container {
+  width: 100%; /* Centraliza o conteúdo */
+  max-width: 1200px; /* Define a largura máxima do container */
+}
+
+/* Estilos do card */
+.card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 25px 25px;
+  gap: 30px;
+  box-shadow: 0px 0px 20px rgba(46, 162, 58, 0.671);
+}
+
+/* Estilos dos containers de redes sociais e ícones */
+.socialContainer {
+  width: 52px;
+  height: 52px;
+  background-color: rgb(139, 167, 38);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  transition-duration: .3s;
+}
+
+/* Estilos dos ícones das redes sociais */
+.socialSvg {
+  width: 24px; /* Ajuste conforme necessário */
+}
+
+.socialSvg path {
+  fill: rgb(255, 255, 255);
+}
+
+.socialContainer:hover {
+  background-color: #edc603; /* Cor de destaque para o Instagram */
+}
+
+/* Adicione estilos semelhantes para as outras redes sociais conforme necessário */
+
+.socialContainer:active {
+  transform: scale(0.9);
+  transition-duration: .3s;
+}
+
+.socialContainer:hover .socialSvg {
+  animation: slide-in-top 0.3s both;
+}
+
+@keyframes slide-in-top {
+  0% {
+    transform: translateY(-50px);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+footer {
+  background-color: #232f3e; /* Cor de fundo */
+  color: #fff; /* Cor do texto */
+  padding: 30px 0; /* Espaçamento interno */
+}
+.container {
+  width: 100%; /* Centraliza o conteúdo */
+  max-width: 1200px; /* Define a largura máxima do container */
+  margin: 0 auto; /* Centraliza o container */
+}
+.card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* Distribui os elementos horizontalmente */
+}
+
+/* Estilos das seções */
+.section {
+  flex: 1; /* Ocupa o espaço disponível */
+}
+
+/* Estilos dos títulos */
+.section h4 {
+  margin-bottom: 10px;
+  font-size: 18px;
+}
+
+/* Estilos dos parágrafos */
+.section p {
+  margin-bottom: 5px;
+}
+
+/* Estilo dos links */
+.section a {
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.section a:hover {
+  color: #ffa500; /* Cor ao passar o mouse */
+}

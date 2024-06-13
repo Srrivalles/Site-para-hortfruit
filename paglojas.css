@@ -1,0 +1,278 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&display=swap');
+*{ margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    }
+body{font-size: 100%;
+  border: #edc603 solid 1px;
+  background-color: #cfb541;
+}
+/*começo da pagina*/
+.cabecalho{
+    display: flex;
+    flex-direction: row ;
+    align-items: center;
+    justify-content: space-around;
+    padding: 19px;
+    background-image:url(./Imagens2/Fruta_Principal.jpg);
+    background-size:cover; 
+    background-position: center -900px ;
+    background-repeat: no-repeat;
+    border-radius: 1000pc 900px;
+}
+/*imagem da logo da maça*/
+.imagem-logo{
+    height: 100px;
+    width: 100px;
+    padding: 4px;
+    border: 3px solid rgb(0, 0, 0);
+    box-shadow: 40pc;
+    backdrop-filter: blur(10px);
+    border-radius: 10px;
+}
+/*Termino */
+
+/*navegação de guias*/
+.cabeçalho-menu{
+  display:flex;
+  gap: 2cm;
+  box-sizing:border-box;
+  padding: 10px 100px;
+}
+
+/*palavras que são as guias no cabecalho*/
+.cabeçalho-menu-item{
+  align-items: center;
+  font-family: "Comfortaa", sans-serif;
+  color: rgb(255, 255, 255);
+  font-size: 28px;
+  font-weight: 400px;
+  border: 2px solid rgb(7, 8, 50);
+  border-radius: 10px;
+  backdrop-filter: blur(10px);
+  padding: 7px 7px 7px 7px;
+}
+
+/*Animação do botão logo*/
+
+.imagem-logo {
+    transition: transform 1.0s ease;
+}
+/*Termino*/
+
+/*Animação do cabeçalho botao item*/
+.cabeçalho-menu-item {
+    transition: transform 1.0s ease;
+}
+.imagem-logo:hover {
+    transform: scale(1.1); /* Amplia a imagem em 10% */
+}
+
+.cabeçalho-menu-item:hover {
+    transform: scale(1.1); /* Amplia o item do menu em 10% */
+}
+/*Termino*/
+
+/* Fim menu pagina*/
+
+main {
+  padding: 15px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto auto auto;
+  gap: 20px; /* Espaçamento entre os itens */
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.summary-item {
+  text-align: center;
+}
+
+.summary-item img {
+  max-width: 100%;
+  height: auto;
+}
+
+.text h2 {
+  font-size: 1.5em;
+  margin-top: 10px;
+}
+
+/* Especificar o posicionamento de cada item */
+.summary-item:nth-child(1) {
+  grid-column: 1;
+  grid-row: 1;
+}
+
+.summary-item:nth-child(2) {
+  grid-column: 2;
+  grid-row: 1;
+}
+
+.summary-item:nth-child(3) {
+  grid-column: 1;
+  grid-row: 2;
+}
+
+.summary-item:nth-child(4) {
+  grid-column: 2;
+  grid-row: 2;
+}
+
+.summary-item:nth-child(5) {
+  grid-column: 1 / span 2; /* Faz com que o item ocupe ambas as colunas */
+  grid-row: 3;
+  justify-self: center; /* Central
+    justify-self: center; /* Centraliza o item horizontalmente */
+  }
+
+  /* Adicional: Para garantir que o conteúdo se adapte bem em telas menores */
+  @media (max-width: 768px) {
+      main {
+          grid-template-columns: 1fr;
+          grid-template-rows: auto;
+      }
+  
+      .summary-item:nth-child(5) {
+          grid-column: 1;
+      }
+  }
+  
+
+
+
+/* Estilo para centralizar o footer */
+footer {
+  display: flex;
+  justify-content: center;
+  margin-top: 0px; /* Ajuste conforme necessário */
+  background-image: url(./Imagens2/Fruta_Principal.jpg);
+  backdrop-filter: blur(6px);
+  background-position: center -1200px;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.container {
+  font-family: "Comfortaa", sans-serif;
+  font-size: 20px;
+  font-weight: 400px;
+  background-color: #1c1c1698;
+  width: 100%; /* Centraliza o conteúdo */
+  max-width: 1200px; /* Define a largura máxima do container */
+}
+
+/* Estilo para centralizar o footer */
+footer {
+  display: flex;
+  justify-content: center;
+  margin-top: 0px; /* Ajuste conforme necessário */
+}
+
+.container {
+  width: 100%; /* Centraliza o conteúdo */
+  max-width: 1200px; /* Define a largura máxima do container */
+}
+
+/* Estilos do card */
+.card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 25px 25px;
+  gap: 30px;
+  box-shadow: 0px 0px 20px rgba(46, 162, 58, 0.671);
+}
+
+/* Estilos dos containers de redes sociais e ícones */
+.socialContainer {
+  width: 52px;
+  height: 52px;
+  background-color: rgb(139, 167, 38);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  transition-duration: .3s;
+}
+
+/* Estilos dos ícones das redes sociais */
+.socialSvg {
+  width: 24px; /* Ajuste conforme necessário */
+}
+
+.socialSvg path {
+  fill: rgb(255, 255, 255);
+}
+
+.socialContainer:hover {
+  background-color: #edc603; /* Cor de destaque para o Instagram */
+}
+
+/* Adicione estilos semelhantes para as outras redes sociais conforme necessário */
+
+.socialContainer:active {
+  transform: scale(0.9);
+  transition-duration: .3s;
+}
+
+.socialContainer:hover .socialSvg {
+  animation: slide-in-top 0.3s both;
+}
+
+@keyframes slide-in-top {
+  0% {
+    transform: translateY(-50px);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+footer {
+  background-color: #232f3e; /* Cor de fundo */
+  color: #fff; /* Cor do texto */
+  padding: 30px 0; /* Espaçamento interno */
+}
+.container {
+  width: 100%; /* Centraliza o conteúdo */
+  max-width: 1200px; /* Define a largura máxima do container */
+  margin: 0 auto; /* Centraliza o container */
+}
+.card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* Distribui os elementos horizontalmente */
+}
+
+/* Estilos das seções */
+.section {
+  flex: 1; /* Ocupa o espaço disponível */
+}
+
+/* Estilos dos títulos */
+.section h4 {
+  margin-bottom: 10px;
+  font-size: 18px;
+}
+
+/* Estilos dos parágrafos */
+.section p {
+  margin-bottom: 5px;
+}
+
+/* Estilo dos links */
+.section a {
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.section a:hover {
+  color: #ffa500; /* Cor ao passar o mouse */
+}
